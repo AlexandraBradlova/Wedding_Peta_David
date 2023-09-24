@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+
+:root {
+    --background-beige: #ffdcbe;
+    --background-other: #ffbe86;
+    --menu-background: #fda95f;
+    --menu-hover: #bb700d;
+    --countdown-bgr: #79805f; 
+    --menu-text: #f9f3d6;
+    --text: #403424;
+    --okraje: 2rem;
+    --okraje-mobil: 1rem;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text);
+}
+
+body {
+    background-color: var(--background-beige);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 100%;
+
+}
+.bgr-darker {
+    background-color: var(--menu-background);
+    width: 100%;
+}
+.wrap-okraje {
+    margin: 0 var(--okraje-mobil);
+
+}
+
+/* --------------------------------------------------------------------- */
+.timeline-bg {
+    background-image: linear-gradient(rgba(243, 217, 189, 0.8),rgba(182, 202, 195, 0.8)), url(IMG/V\ \(1\).JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: var(--okraje-mobil) 0;
+}
+.timeline {
+    position: relative;
+}
+
+.timeline h3 {
+    text-align: center;
+
+}
+
+/* VERTIKÁLNI OSA - ČÁRA */
+.timeline-container::before {
+    content: "";
+    width: 4px;
+    background-color: var(--text);
+    position: absolute;
+    top: 4.5rem;
+    bottom: 2rem;
+    
+}
+
+/* COLORED CONTAINER WITH EVENTS */
+.event {
+    background-color: var(--background-other);
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid var(--text);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+   
+}
+/* DEKORACE NA OSE */
+.event::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 10px);   
+    left: -38px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--background-other);
+    border: 2px solid var(--text);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.event h4 {
+    padding-bottom: 5px;
+    font-size: 1rem;
+}
+
+
+
+.event p::before {
+    content: "\0022";
+}
+
+.event p::after {
+    content: "\0022";
+}
+
+
+
+
+/* MEDIA QUERIES - VERZE NA MONITOR -------------------------------- */
+
+@media (min-width:600px) {
+    .timeline-bg {     
+        padding: var(--okraje) 0;
+    }
+
+    
+    .timeline h3 {
+        padding-bottom: var(--okraje);
+    }
+   
+
+    .wrap-okraje {
+        margin: 0 var(--okraje);
+    }
+/* VERTIKÁLNI OSA - ČÁRA */
+    .timeline-container::before { 
+        top: 7.5rem;
+        bottom: 2rem;  
+        left: 50%;
+        
+    }   
+    /* COLORED CONTAINER WITH EVENTS */
+    .event {
+        margin-left: 0;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        width: calc(50% - var(--okraje-mobil));
+        padding: 1rem;     
+    }
+
+    .event h4 {
+        font-size: 1.2rem;
+    }
+    
+    .event p {
+        font-size: 1.2rem;
+    }
+   
+    /* DEKORACE NA OSE */
+    .event::after {   
+        left: calc((100% + 2rem) - 20px)       
+      
+    }
+
+/* KONTEJNERY VPRAVO ----------------------------------------- */
+    .right {
+        margin-left:calc(50% + 1rem);
+        width: 100%;
+    }
+
+    /* DEKORACE NA OSE */
+    .right .event::after  {   
+        left: calc(-1rem - 6px)
+      
+    }
+/* posledni kontejner - SVATBA!!! */
+    .center .event {
+        margin-top: 2rem;
+        left: calc(50% - 25%);
+        width: 50%; 
+        /* background-color:var(--menu-background);        */
+    }
+
+    .center .event p {
+        font-size: 2rem;          
+    }
+
+    .center .event::after {
+        display: none;
+    }    
+
+}

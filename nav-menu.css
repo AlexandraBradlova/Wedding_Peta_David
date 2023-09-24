@@ -1,0 +1,122 @@
+header {
+    text-align: center;
+    /* position: fixed; */
+    z-index: 999;
+    width: 100%;  
+    background-color: var(--menu-background);
+    position: relative;
+
+
+}
+.logo{
+    height: 3rem;
+
+}
+.logo img {
+    height: 100%;
+}
+nav {
+    background-color: var(--menu-background);
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    /* misto display none lze pouzit nasledujici */
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+
+}
+
+nav ul {
+    margin-bottom: 1rem;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+}
+nav a {
+    font-size: .8rem;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    color: var(--menu-hover);
+    cursor: pointer;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+
+}
+/* aby nebyl videt check box */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle:checked ~ nav a {
+opacity: 1;
+
+transition: opacity 250ms ease-in-out 250ms;
+}
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  
+  @media (min-width: 800px){
+    .nav-toggle-label {
+        display: none;
+    }
+   
+    header {
+        display: grid;
+        grid-template-columns: 2rem auto minmax(500px, 3fr) 2rem;
+    }
+
+    .logo {
+        grid-column: 2/3;
+    }
+        
+    nav {
+        grid-column: 3/4;
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;      
+    }
+    nav a {
+        opacity: 1;
+        font-size: 1rem;
+    }
+    nav ul {
+        display: flex;
+        margin-bottom: 0 !important;
+        
+    }
+    nav li {
+        margin-left: 1rem;  
+        margin-bottom: 0;      
+    }  
+    
+  }
+
+
+
+ 
+
+
+

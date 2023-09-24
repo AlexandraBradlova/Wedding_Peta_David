@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Péťa&David</title>    
+    <link rel="icon" type="image/x-icon" href="IMG/favicon-ring.ico">
+    <link href="style.css" rel="stylesheet" />
+    <link href="queries.css" rel="stylesheet" />
+    <link href="nav-menu.css" rel="stylesheet" />
+    <link href="timeline.css" rel="stylesheet" />
+    <!-- písmo na titulce -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    
+
+       <!-- script s napojenim kvuli burger menu a cross ikonám!!! -->
+       <script src="https://kit.fontawesome.com/8ba26cb1dc.js" crossorigin="anonymous"></script>  
+    
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMG/favicon-ring.ico" alt="">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav class="bgr-darker">
+            <ul>
+                <!-- SROVNAT PORADI V TEXTU!!! -->
+                <li><a href="#timeline">Jak šel čas</a></li>
+                <li><a href="#obrad">Obřad</a></li>
+                <li><a href="#hostina">Hostina</a></li>
+                <li><a href="#organizace">Před obřadem</a></li>
+                <li><a href="#harmonogram">Harmonogram</a></li>
+                <li><a href="#vylety">Pro ubytované</a></li>
+                <li><a href="#kontakty">Kontakty</a></li>
+
+                
+            </ul>  
+        </nav>
+        <label for="nav-toggle"class="nav-toggle-label">
+            
+                <i class="fa-solid fa-bars-staggered"></i>
+                <!-- <i class="fa-solid fa-xmark"></i> -->            
+        </label>
+    </header>       
+
+        <!-- HERO SECTION - HLAVNÍ NADPIS -->
+    <section class="hero-background">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Péťa & David</h1>
+                <h2>14. 10. 2023 11:00</h2>                   
+            </div>
+        </div>
+    </section>
+    
+    <!-- ODPOCITAVAC -->
+    <section class="countdown">
+        <div class="countdown-container">
+            <!-- DAYS -->
+            <div class="date-containers">
+                <div class="countdown-date-values" id="days">00</div>
+                <div class="countdown-label">DNŮ</div>
+            </div>
+            <!-- HOURS -->
+            <div class="date-containers">
+                <div class="countdown-date-values" id="hours">00</div>
+                <div class="countdown-label">HODIN</div>
+            </div>
+            <!-- MINUTES -->
+            <div class="date-containers">
+                <div class="countdown-date-values" id="minutes">00</div>
+                <div class="countdown-label">MINUT</div>
+            </div>
+            <!-- SECONDS -->
+            <div class="date-containers">
+                <div class="countdown-date-values" id="seconds">00</div>
+                <div class="countdown-label">SEKUND</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOTOGALERIE -->
+    <section class="fotogalerie bgr-darker" id="fotogalerie">
+        <div class="fotogalerie-container">
+            <!-- <div class="sipka">&lt;</div> -->
+            <div class="fotogalerie-foto">
+                <img src="IMG/zmensene/D (4)_zmenseno.jpg" alt="">
+                <img src="IMG/zmensene/D (1)_zmenseno.jpg" alt="">
+                <img src="IMG/zmensene/D (2)_zmenseno.jpg" alt="">
+                <img src="IMG/zmensene/D (16)_zmenseno.jpg" alt="">
+                       
+            </div>        
+            <!-- <div class="sipka">&gt;</div> -->
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="timeline-bg" id="timeline">
+        <div class="timeline wrap-okraje">
+            <h3>Jak šel čas</h3>
+
+            <div class="timeline-container left">
+                <div class="event">
+                    <h4>11.7.2015</h4>
+                    <p>Marlenka není medovník!</p>
+                </div>
+            </div>
+
+            <div class="timeline-container right">
+                <div class="event">
+                    <h4>27.12.2016</h4>
+                    <p>První kino - Anděl Páně 2</p>
+                </div>
+            </div>
+
+            <!-- <div class="timeline-container">
+                <div class="event">
+                    <h4>24.6.2017</h4>
+                    <p>Procházka Maršovákem aneb "mohli bychom tomu říkat rande?</p>
+                </div>
+            </div> -->
+
+            <div class="timeline-container left">
+                <div class="event">
+                    <h4>17.7.2017</h4>
+                    <p>Výlet na vodopády, co jsme neviděli aneb je to oficiální</p>
+                </div>
+            </div>
+
+            <div class="timeline-container right">
+                <div class="event">
+                    <h4>26.10.2017</h4>
+                    <p>První společná dovolená v Mikulově</p>
+                </div>
+            </div>
+
+            <div class="timeline-container left">
+                <div class="event">
+                    <h4>?.12.2018</h4>
+                    <p>První (a stále současné) první bydlení</p>
+                </div>
+            </div>
+            
+            <!-- <div class="timeline-container ">
+                <div class="event">
+                    <h4>Červen 2020</h4>
+                    <p>David ukončil studium v UK a přišel do Brna</p>
+                </div>
+            </div> -->
+            
+            <div class="timeline-container right">
+                <div class="event">
+                    <h4>14.8.2021</h4>
+                    <p>Péťa chytá svatební kytku</p>
+                </div>
+            </div>
+            
+            <div class="timeline-container left">
+                <div class="event">
+                    <h4>1.8.2022</h4>
+                    <p>První společná dovča u moře (Španělsko)</p>
+                </div>
+            </div>
+            
+            <div class="timeline-container right">
+                <div class="event">
+                    <h4>25.2.2023</h4>
+                    <p>Vezmeš si mě?</p>
+                </div>
+            </div>
+    <!-- zacentrovane??? -->
+            <div class="timeline-container center">
+                <div class="event">
+                    <h4>14.10.2023</h4>
+                    <p>Kaválkovi</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+ 
+    <!-- PROGRAM A ORGANIZACE -->
+    <section class="organizace bgr-darker" id="organizace">
+        <div class="organizace-container wrap-okraje">
+
+            <h3>Před obřadem</h3>
+
+            <ul class="organizace-list">
+                <li><b>Sraz v 9:00 u skautské klubovny</b></li>
+                <li>Zdobení a minimalizace aut</li>
+                <li>Společný odjezd na obřad</li>
+            </ul>
+
+            <div class="organizace-adresa">            
+                <p>
+                <b>Skautská klubovna</b><br>
+                Na Babí 165,<br>
+                Police nad Metují,<br>
+                549 54<br>
+                </p>               
+            </div>
+                      
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3015.6996368030277!2d16.234225245405597!3d50.53619817193828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e678c440ddf2b%3A0x634b28f74bd58708!2zSnVuw6FrIC0gxI1lc2vDvSBza2F1dCwgc3TFmWVkaXNrbyBTa2Fsw6FjaSBQb2xpY2UgbmFkIE1ldHVqw60!5e0!3m2!1scs!2scz!4v1695475922422!5m2!1scs!2scz"                 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div> 
+        </div>        
+    </section>
+
+
+    <!-- OBRAD -->
+    <section class="lokace" id="obrad">
+        <div class="lokace-container wrap-okraje">
+
+            <h3>Obřad</h3>        
+
+            <div class="adresa">
+                <p><b>Kaple Panny Marie Sněžné (Hvězda)</b></p> 
+                <!-- <p>9:00 Sraz u Skautské klubovny <i>(viz.organizace)</i> a pokud možno společný odjezd</p> -->
+                <p>V případě nepříznivého počasí bude obřad na radnici <br>(bude včas upřesněno)</p>             
+            </div>
+            <div class="lokace-img">
+                <img src="https://www.ehotel.cz/files/shutterstock-117688963.jpg">
+            </div>
+            
+
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7167.888059694083!2d16.26604635364847!3d50.56706696913986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e5d3c0edb67e9%3A0x86b1db580cd6194b!2zS2FwbGUgUGFubnkgTWFyaWUgU27Em8W-bsOp!5e0!3m2!1scs!2scz!4v1692970336622!5m2!1scs!2scz" 
+                    
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>        
+            </div>
+        </div>
+    </section>
+
+    <!-- FOTOGALERIE NO.2 -->
+    <section class="fotogalerie2 bgr-darker" id="fotogalerie">
+        <div class="fotogalerie2-container">
+            <!-- <div class="sipka">&lt;</div> -->
+            <div class="fotogalerie2-foto">              
+                <img id="img17" src="IMG/zmensene/V (17)_zmenseno.jpg" alt="davca+pes">
+                <img id="img25" src="IMG/zmensene/D (25)_zmenseno.jpg" alt="pariz">
+                <img id="img19" src="IMG/zmensene/V (19)_zmenseno.jpg"
+                alt="peta+pes">           
+                      
+            </div>        
+            <!-- <div class="sipka">&gt;</div> -->
+        </div>
+    </section>        
+        <!-- HOSTINA -->
+    <section class="lokace bgr-darker" id="hostina">
+        <div class="lokace-container wrap-okraje">
+
+            <h3>Hostina</h3>
+
+            <div class="adresa">
+                <p><b>Penzion&Restaurace u Lidmanů</b><br>
+                Machovská Lhota 40<br>
+                Machov 549 31</p><br>
+                <p><i>Více informací <a href="https://www.ulidmanu.cz/index.html">ZDE</a></i></p> 
+            </div>
+
+            <div class="lokace-img">
+                <img src="IMG/u lidmanu.webp">
+            </div>     
+            
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7178.1691722140495!2d16.284034584408598!3d50.49945074575402!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e686d9f1caccd%3A0x5443aff885131f52!2sPension%20-%20Restaurace%20U%20Lidman%C5%AF!5e0!3m2!1scs!2scz!4v1692971032312!5m2!1scs!2scz" 
+                        
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div> 
+        </div>        
+    </section>
+
+
+
+
+<!-- harmonogram -->
+    <section class="harmonogram wrap-okraje" id="harmonogram">
+        <div class="harmonogram-wrapper">
+            <!-- <h3>Harmonogram</h3>  -->
+        
+            <div class="harmonogram-obsah">
+                <img src="IMG/harmonogram.png" alt="pdf harmonogram">
+               
+                <p class="taxi"><b>Během sobotního odpoledne i večera je Vám k dispozici řidič, který Vám pomůže odvézt auto dle potřeby. Odveze Vás zpět na hostinu a večer opět i v poklidu domů.</b>
+                </p>
+            </div>
+        </div>           
+    </section>
+
+    <!-- PRO UBYTOVANÉ - UBYTKO, DOPRAVA I VÝLETY!!! -->
+    <!-- VYLETY PRO PŘESPOLNÍ -->
+    <section class="vylety-container bgr-darker" id="vylety">
+        <div class="vylety wrap-okraje">
+
+            <h3>Informace pro ubytované</h3>
+
+            <div class="info-ubytovani">
+                <p>Příjezd na ubytování je možný během pátku, v neděli je nutné uvolnit během dopoledne (bude ještě upřesněno)</p>
+                <p>Kde přesně jste ubytování Vám sdělí po příjezdu David, Péťa nebo svědkové - Michal a Saša.</p>
+                <p>Snídaně je zajištěna v sobotu i v neděli pro všechny ubytované v Machovské Lhotě (U Lidmanů či v apartmánech) a to přímo v restauraci "U Lidmanů"</p>
+                <p>Prosíme ty z vás, kteří se do Police dopravíte vlakem/autobusem, dejte vědět Davidovi nebo Pétě a zařídíme vám odvoz na ubytování.</p>
+            </div>
+
+            <h4>Co navštívit a kde se najíst?</h3>
+
+            <div class="vylety-dlazdice">
+
+                <div class="dlazdice">
+                    <a href="https://www.adrspasskeskaly.cz/?gclid=CjwKCAjwpJWoBhA8EiwAHZFzfoh6xputBXfc6Mdh_CXMWIsg7v09dkyEoFP_Kn5yT4Ltrn9IAKdzaxoCiwgQAvD_BwE">
+                        <img 
+                        src="https://source.unsplash.com/44rYsZ1rMgE" 
+                        alt="Adršpach">
+                        <p>Adršpach</p>
+
+                    </a>                  
+                </div>
+    
+                <div class="dlazdice">
+                    <a href="https://www.kudyznudy.cz/kam-pojedete/kralovehradecky-kraj/broumovsko/police-nad-metuji">
+                        <img src="IMG/zmensene/Police-radnice.jpg" alt="Police n.M.">
+                        <p>Police nad Metují</p>
+                    </a> 
+                </div>
+    
+                <div class="dlazdice">                    
+                    <a href="https://www.region-adrspach.cz/aktivni-vyziti/turisticke-stezky/na-ostas/">
+                        <img src="IMG/zmensene/Ostaš.jpg" alt="Ostaš">
+                        <p>Ostaš</p>
+                    </a>
+                </div>
+    
+                <div class="dlazdice">
+                    <a href="https://www.google.com/search?q=penzion+na+myte+65+police+nad+metuj%C3%AD&sca_esv=565933642&sxsrf=AM9HkKkYWFiBVjO8kag4JfDoS_ypaiMJXQ%3A1694877722957&ei=GsgFZeP6OdaT9u8PsOCagAs&oq=penzion+na+myte+65+police+nad+metji&gs_lp=Egxnd3Mtd2l6LXNlcnAiI3Blbnppb24gbmEgbXl0ZSA2NSBwb2xpY2UgbmFkIG1ldGppKgIIADIHECEYoAEYCkiOLFDFB1jWIXABeAGQAQGYAagDoAHLFqoBCTAuMS43LjIuMbgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgUQABiiBMICBRAhGKABwgIIECEYFhgeGB3iAwQYACBBiAYBkAYF&sclient=gws-wiz-serp">
+                        <img src="IMG/zmensene/Mýto.jpg" alt="restaurace1">
+                        <p>Pension 65 (Mýto)</p>
+                    </a>
+                </div>
+    
+                <div class="dlazdice">                    
+                    <a href="https://www.ulidmanu.cz/restaurace.html">
+                        <img src="IMG/zmensene/U Lidmanu restaurace.jpg" alt="U lidmanů">
+                        <p>U Lidmanů</p>
+                    </a>
+                </div>
+    
+                <div class="dlazdice">
+                    <a href="https://www.regiontourist.cz/co-podniknout/lokalita/police-nad-metuji/">
+                        <img src="https://source.unsplash.com/-dChkgNLmp4" alt="zkuste jiné">
+                        <p>Jiné</p>
+                    </a>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+    <section class="kontakty wrap-okraje" id="kontakty">
+        <h3>Kontakty</h3>
+
+        <div>
+            <p>V případě potřeby se můžete do svatebního dne obracet na Davida, Péťu či svědky, v den konání již prosíme kontaktujte výhradně svědky:</p>
+            <table>
+                <tr>
+                    <td>David Kaválek</td>
+                    <td>+420 731 717 536</td>
+                </tr>
+                <tr>
+                    <td>Péťa Seidlová</td>
+                    <td>+420 606 247 507</td>
+                </tr>
+                <tr>
+                    <td>Michal Bureš</td>
+                    <td>+420 773 046 484</td>
+                </tr>
+                <tr>
+                    <td>Saša Brádlová</td>
+                    <td>+420 722 354 600</td>
+                </tr>
+            </table>
+        </div>
+
+        
+
+    </section>
+
+<!-- FOTOGALERIE NO.3 -->
+<section class="fotogalerie3 bgr-darker">
+    <div class="fotogalerie3-container">
+        <div class="fotogalerie3-foto">
+            <img id="zasnuby" src="IMG/zmensene/zasnuby_zmenseno.jpg" alt="ZASNOUBENI">
+
+            <img id="img24" src="IMG/zmensene/V (24)_zmenseno.jpg" alt="retardi">           
+
+            <img id="img18" src="IMG/zmensene/V (18)_zmenseno.jpg" alt="koloseum">
+            
+            <img id="img9" src="IMG/zmensene/V (9)_zmenseno.jpg" alt="red dress">
+
+            <img id="img2" src="IMG/zmensene/V (2)_zmenseno.jpg" alt="kašna">
+
+            <img id="img24D" src="IMG/zmensene/D (24)_zmenseno.jpg" alt="hvezda?">
+
+            <img id="img22" src="IMG/zmensene/D (22)_zmenseno.jpg" alt="skaly">
+            
+            <img id="img13" src="IMG/zmensene/D (13)_zmenseno.jpg" alt="sportovni">    
+        </div>        
+    </div>
+</section>
+<footer>
+    <p>Vytvořila Alexandra Brádlová (<a href="mailto:Bradlova1@seznam.cz">napiš mi</a>)</p>
+</footer>
+      
+    
+</body>
+
+<script src="script.js"></script>
+
+</html>
