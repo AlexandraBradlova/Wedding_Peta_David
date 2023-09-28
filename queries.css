@@ -253,8 +253,8 @@
     #img18 {
         grid-area: img18; 
     }    
-    #img9 {
-        grid-area: img9; 
+    #img20 {
+        grid-area: img20; 
     }
     #img2 {
         grid-area: img2; 
@@ -272,6 +272,8 @@
     .fotogalerie3-foto {
     
         display: grid;
+        object-fit: cover;
+        object-position: top center;
         justify-content: center;
         align-items: center;
         border: 5px solid white;   
@@ -288,8 +290,8 @@
         "zasnuby zasnuby zasnuby zasnuby img2 img2 img13 img13 img13 img13"
         "zasnuby zasnuby zasnuby zasnuby img22 img22 img22 img24 img24 img24"
         "zasnuby zasnuby zasnuby zasnuby img22 img22 img22 img24 img24 img24"
-        "img24D img24D img24D img9 img9 img18 img18 img24 img24 img24"
-        "img24D img24D img24D img9 img9 img18 img18 img24 img24 img24"
+        "img24D img24D img24D img20 img20 img18 img18 img24 img24 img24"
+        "img24D img24D img24D img20 img20 img18 img18 img24 img24 img24"
 
         
  
